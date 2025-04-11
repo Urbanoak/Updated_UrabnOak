@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UrbanOak Cart</title>
+    <link rel="stylesheet" href="./cart.css" />
+</head>
+<body>
+    <nav>
+        <p><a href="./index2.html"><span>UrbanOak</span></a></p>
+        <a href="./store.html">Store</a>
+    </nav>
+
+    <section class="cart-section">
+        <h1 class="cart-title">Your Bag Total is $0</h1>
+        <p class="cart-emi">EMI Option: $0/month for 12 months (1% interest)</p>
+        <div class="cart-items"></div>
+        <div class="cart-summary">
+            <p class="cart-subtotal"><strong>Subtotal:</strong> $0</p>
+            <p class="cart-shipping"><strong>Shipping:</strong> $0</p>
+            <hr class="summary-divider" />
+            <p class="cart-total"><strong>Total:</strong> $0</p>
+            <p class="cart-emi-summary"><strong>EMI:</strong> $0/month for 12 months</p>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </section>
+
+    <section class="payroll-section" style="display: none;">
+        <h2>Checkout</h2>
+        <form id="payment-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required />
+            <label for="email">Email:</label>
+            <input type="email" id="email" required />
+            <label for="address">Shipping Address:</label>
+            <textarea id="address" required></textarea>
+            <label for="card">Card Number:</label>
+            <input type="text" id="card" placeholder="1234-5678-9012-3456" required />
+            <label for="expiry">Expiry Date:</label>
+            <input type="text" id="expiry" placeholder="MM/YY" required />
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" maxlength="3" required />
+            <button type="submit">Pay Now</button>
+        </form>
+    </section>
+
+    <footer class="cart-footer">
+        <p>Copyright © 2025 UrbanOak Inc. All rights reserved.</p>
+        <p>India</p>
+    </footer>
+
+    <script src="./cart.js"></script>
+</body>
+</html>

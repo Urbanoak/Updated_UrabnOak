@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Akkurat Trail TT", sans-serif;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    color: #05172f;
+    overflow-x: hidden;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    background: rgba(245, 245, 245, 0.8);
+    backdrop-filter: blur(5px);
+}
+
+nav .logo-link {
+    text-decoration: none;
+    color: #05172f;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav .logo-link:hover {
+    color: #1e3a8a;
+    transform: translateY(-2px);
+}
+
+nav p {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+}
+
+nav p span {
+    font-family: "Gascogne Serial", serif;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #05172f;
+    font-size: 13px;
+    text-transform: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #1e3a8a;
+    transform: translateY(-2px);
+}
+
+nav a.active {
+    color: #1e3a8a;
+    font-weight: bold;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 2em;
+}
+
+.login-container h2 {
+    font-family: "Gascogne Serial", serif;
+    font-size: 60px;
+    color: #05172f;
+    margin-bottom: 1em;
+    text-transform: none;
+    font-weight: 400;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    gap: 1.5em;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #05172f;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+}
+
+.input-group input {
+    padding: 0.75em;
+    font-size: 16px;
+    border: 2px solid #05172f;
+    border-radius: 25px;
+    background-color: #ffffff;
+    color: #05172f;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #1e3a8a;
+    box-shadow: 0 0 8px rgba(30, 58, 138, 0.3);
+}
+
+/* Neon Glow and Zoom for Inputs */
+.input-group input:hover {
+    transform: scale(1.03);
+    background-color: #ffffff;
+    box-shadow: 0 0 10px #1e3a8a, 0 0 20px #1e3a8a;
+}
+
+/* Login Button */
+.login-btn {
+    padding: 0.8em;
+    font-size: 16px;
+    text-transform: none;
+    background-color: #011023;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Neon Glow and Zoom for Login Button */
+.login-btn:hover {
+    background-color: #000000;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
+}
+
+/* Optional: Smooth Zoom-In-Out Pulse Animation */
+@keyframes pulse-zoom {
+    0% { transform: scale(1); box-shadow: none; }
+    50% { transform: scale(1.05); box-shadow: 0 0 15px #00ffff; }
+    /* 100% { transform: scale(1); box-shadow: none; } */
+}
+
+.input-group input:hover,
+.login-btn:hover {
+    animation: pulse-zoom 0.6s ease-in-out;
+}
+
+.error-message {
+    color: #ff0000;
+    font-size: 14px;
+    text-align: center;
+    min-height: 20px;
+}

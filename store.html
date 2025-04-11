@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UrbanOak Store</title>
+    <link rel="stylesheet" href="./store.css" />
+</head>
+<body>
+    <nav>
+        <p><a href="./index2.html"><span>UrbanOak</span></a></p>
+        <a href="#">Store</a>
+    </nav>
+
+    <section class="store-intro">
+        <h1>Our Collection</h1>
+        <p>Explore our innovative and sustainable furniture designs.</p>
+    </section>
+
+    <section class="products">
+        <div class="product-item">
+            <div class="product-model" data-model="/assets/black_chair.glb"></div>
+            <h2>Chair</h2>
+            <p>A minimalist and ergonomic chair crafted from sustainable materials. Perfect for modern living spaces.</p>
+            <p><strong>Price:</strong> $199</p>
+            <button class="add-to-cart" data-name="Chair" data-price="199">Add to Cart</button>
+        </div>
+        <div class="product-item">
+            <div class="product-model" data-model="/assets/table.glb"></div>
+            <h2>Sofa</h2>
+            <p>A sleek and comfortable sofa designed for relaxation and style, made with eco-friendly fabrics.</p>
+            <p><strong>Price:</strong> $599</p>
+            <button class="add-to-cart" data-name="Sofa" data-price="599">Add to Cart</button>
+        </div>
+        <div class="product-item">
+            <div class="product-model" data-model="/assets/Vase.glb"></div>
+            <h2>Vase</h2>
+            <p>A contemporary decorative vase, blending form and function with a unique aesthetic.</p>
+            <p><strong>Price:</strong> $49</p>
+            <button class="add-to-cart" data-name="Vase" data-price="49">Add to Cart</button>
+        </div>
+    </section>
+
+    <footer class="store-footer">
+        <p>Copyright © 2025 UrbanOak Inc. All rights reserved.</p>
+        <p>India</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="./store.js"></script>
+</body>
+</html>
